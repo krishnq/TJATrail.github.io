@@ -1,0 +1,59 @@
+<html>
+    <head>
+	   <link rel="shortcut icon" href="images/logo.png" /> 
+	   <title>About Us</title>    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="about%20us.css">
+				<link rel="stylesheet" href="buttons.css">
+<script>
+		var sizt=11;
+		function changerHT(fore,backs){
+		var x= fore.clientHeight;
+		var y= backs.clientHeight;
+		var z=y-70;
+		if(x>y){
+		sizt = sizt - 1 ;
+		}else if(x<z) sizt=sizt+1;
+		fore.style.fontSize = sizt+"px";
+		}
+		var sit=120;
+		function changerWDT(fore){
+		var x= fore.clientWidth;
+		var y = .4 * (window.innerWidth);
+		var z=y-70;
+		if(x>y){
+		sit = sit - 1 ;
+		}else if(x<z) sit=sit+1;
+		fore.style.fontSize = sit+"px";
+		}
+		window.setInterval(function(){
+		changerHT(document.getElementById('matter'),document.getElementById('parah'));
+		changerWDT(document.getElementById('info'))
+		}, 2);
+		</script>
+    </head>
+    <body>
+	<div id="home_butt">
+         <a href="index.html">
+         <img class="navs" src="images/home_button.svg" alt="Home" />
+         </a>
+        </div>
+        <div id="cont_butt">
+          <a href="contactus.html">
+          <img class="navs" src="images/phone_button.svg" alt="Home" />
+          </a>
+       </div>
+        <div class="image"></div>
+        <div class="title"></div>
+        
+		<h1 id="info">About Us</h1>
+        
+		<div id="parah">
+		
+		<div id="matter">
+		Todd Jersey Architecture is one of the nation's leading Sustainable Design firms. Mr. Jersey and his staff have been leaders in the field of earth friendly design since 1989. The mission of the firm is to create projects that optimally support human needs while protecting and enhancing the earth's ecological systems. The firm has won multiple awards and in our quarter of a century of practice we have completed over 300 exemplary projects.
+		</div></div>
+    </body>
+    
+</html>

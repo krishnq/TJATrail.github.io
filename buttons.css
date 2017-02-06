@@ -1,0 +1,33 @@
+#home_butt{
+    width: 3%;
+    height: 0;
+	position:fixed;
+	right:2%;
+	top:5%;
+	z-index:250;
+    padding-bottom: 3%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 3px white;
+}
+.navs{
+	width:50%;
+	margin-top:23%;
+	margin-left:25%;
+}
+
+
+#cont_butt{
+    width: 3%;
+    height: 0;
+	position:fixed;
+	right:6%;
+	top:5%;
+	z-index:250;
+    padding-bottom: 3%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 3px white;	
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Antic|Quicksand|Righteous');
+body{
+    overflow: hidden;
+    margin: 0%;    
+}
+.image{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/tjahome.jpg);
+    z-index: 0;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+.title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 0;
+    margin: 0%;
+    opacity: .9;
+    background-color: black;
+    z-index: 1;
+}
+
+#parah{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 70%;
+	overflow:hidden;
+    left: 0%;
+    padding: 0;
+    margin: 0%;
+    background-color: white;
+    opacity: .9;
+    z-index: 2;
+}
+h1{
+    padding-left: 0px;
+    margin: 0%;
+    padding: 0 0 0 50;
+    position: absolute;
+    color: #222;
+    font-family: 'Antic', sans-serif;
+    font-size: 3vh;
+    bottom: 30%;
+    opacity: .9;
+    z-index: 3;
+}
+
+#matter{
+	position:relative;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 50;
+	overflow:hidden;
+    padding-top: 4vh;
+    top: 0%;
+    left: 2.5%;
+    width: 95%;
+    z-index: 3;
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Antic|Quicksand|Righteous');
+body{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    background-position: center;
+}
+#dim{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+	background-image: url("images/backgrounds/2.jpg");
+	background-position: center top;
+    filter: grayscale(1);
+    opacity: .5;
+}
+#title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 10vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    font-family: 'Antic', sans-serif;
+    font-size: 3vh;
+    text-align: right;
+    background-color: #f9f9f9;
+    color: #999;
+}
+#title h1{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    width: 98%;
+    padding: 0 0 0 0;
+    margin: 0%;
+}
+.imgc{
+	z-index: 3;
+    position: fixed;
+    height: 10vw;
+    bottom: 60%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.imgc img{
+	height: 7vw;
+	width: 7vw;
+	background-color: black;
+	border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10%;
+    position: fixed;
+    -webkit-transition-duration: .6s; /* Safari */
+    transition-duration: .6s;
+}
+.imgc img:hover{
+	box-shadow: 1px 1px 15px gray;
+	height: 8vw;
+	width: 8vw;
+    -webkit-transition-duration: .4s; /* Safari */
+    transition-duration: .4s;
+}
+#mem1{
+	margin-left: 6%;
+}
+#mem2{
+	margin-left: 19%;
+}
+#mem3{
+	margin-left: 32%;
+}
+#mem4{
+	margin-left: 61%;
+}
+#mem5{
+	margin-left: 74%;
+}
+#mem6{
+	margin-left: 87%;
+}
+#mem1:hover{
+    margin-top: -.5vw;
+	margin-left: 5.5%;
+}
+#mem2:hover{
+    margin-top: -.5vw;
+	margin-left: 18.5%;
+}
+#mem3:hover{
+    margin-top: -.5vw;
+	margin-left: 31.5%;
+}
+#mem4:hover{
+    margin-top: -.5vw;
+	margin-left: 60.5%;
+}
+#mem5:hover{
+    margin-top: -.5vw;
+	margin-left: 73.5%;
+}
+#mem6:hover{
+    margin-top: -.5vw;
+	margin-left: 86.5%;
+}
+#todd{
+	height: 10vw;
+	width: 10vw;
+	margin-left: 45%;
+    margin-top: -1vw;
+}
+#todd:hover{
+	height: 12vw;
+	width: 12vw;
+	margin-left: 44%;
+	margin-top: -2vw;
+}
+
+
+.subc{
+	background-color: blue;
+	z-index: 0;
+    height: 40vh;
+    position: absolute;
+    width: 100%;
+    top: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    float: left;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0px;
+    height: .2vh;
+    width: 30%;
+}
+.cont{
+    width: 50%;
+}

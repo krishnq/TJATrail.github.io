@@ -1,0 +1,164 @@
+<html>
+    <head>
+	   <link rel="shortcut icon" href="images/logo.png" /> 
+	   <title>Projects</title>    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="prjects.css">
+		<link rel="stylesheet" href="buttons.css">
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+            var spd = 18;   <!-- Change this for speed change of horizantal scroll -->
+		$(document).ready(function(){
+		$("#expR").mousemove(function(){
+			$("#expo").scrollLeft($("#expo").scrollLeft()+spd);
+			});
+		$("#expR").hover(function(){
+			$("#expo").scrollLeft($("#expo").scrollLeft()+spd);
+			});
+		$("#expL").mousemove(function(){
+			$("#expo").scrollLeft($("#expo").scrollLeft()-spd);
+			});
+		$("#expL").hover(function(){
+			$("#expo").scrollLeft($("#expo").scrollLeft()-spd);
+			});
+		$("#mixR").mousemove(function(){
+			$("#misk").scrollLeft($("#misk").scrollLeft()+spd);
+			});
+		$("#mixR").hover(function(){
+			$("#misk").scrollLeft($("#misk").scrollLeft()+spd);
+			});
+		$("#mixL").mousemove(function(){
+			$("#misk").scrollLeft($("#misk").scrollLeft()-spd);
+			});
+		$("#mixL").hover(function(){
+			$("#misk").scrollLeft($("#misk").scrollLeft()-spd);
+			});
+		$("#comR").mousemove(function(){
+			$("#comm").scrollLeft($("#comm").scrollLeft()+spd);
+			});
+		$("#comR").hover(function(){
+			$("#comm").scrollLeft($("#comm").scrollLeft()+spd);
+			});
+		$("#comL").mousemove(function(){
+			$("#comm").scrollLeft($("#comm").scrollLeft()-spd);
+			});
+		$("#comL").hover(function(){
+			$("#comm").scrollLeft($("#comm").scrollLeft()-spd);
+			});
+		$('#myDIV').css('display','none');
+		});
+            var  swt = 1;
+        var num = 1;
+		var val = "/"+num.toString()+".png";
+		function InfoImgShow(obj,x){
+			swt = 0;
+            document.getElementById("iasd").src = "images/"+obj+val;
+			document.getElementById("myDIV").style.display = "block";
+			document.getElementById("home_butt").style.display = "none";
+			num=1;
+            setTimeout(function() {valChanger(obj,x);},3000);
+            
+		}
+		function InfoImgHide(){
+            swt = 1;
+			num=1;
+			document.getElementById("myDIV").style.display = "none";
+			document.getElementById("home_butt").style.display = "block";
+           	document.getElementById("iasd").src = ""; 
+		}
+        function valChanger(obj,x){
+            num = num+1;
+            if(num >= x) num=1;
+            val = "/"+num.toString()+".png";
+           	document.getElementById("iasd").src = "images/"+obj+val; 
+            if(swt == 0) setTimeout(function() {valChanger(obj,x);},3000);
+        }
+	</script>
+	<style type="text/css">
+		.pro{
+			overflow-y: hidden;
+		}
+		.img_hold{
+			height: 20vh;display: table-cell;border: none;margin:none;
+		}
+        .ima{
+            display: none;
+			background-color: rgba(0, 0, 0, 0.8);
+        }
+		#iasd{
+		    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+		}
+	</style>
+	</head>
+<body>
+<div id="dull"></div>
+	    
+        <a href="index.html"><div id="home_butt"><img class="navs" src="images/home_button.svg" alt="Home" />
+        </div></a>
+        <div class="img"><h1>Commercial</h1></div>
+        <div class="pro" id="comm">
+		<button id="comR" style="position:absolute;right:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+		<button id="comL" style="position:absolute;left:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,6);" id="gaia_anderson" src="images/gaia_anderson/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,7);" id="gaia_napa" src="images/gaia_napa/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,6);" id="impact" src="images/impact/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,4);" id="kenwood" src="images/kenwood/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,5);" id="lundberg" src="images/lundberg/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,3);" id="soundz" src="images/soundz/1.png"></img></div>
+			<div class="img_hold"><img class="row1" onclick="InfoImgShow(this.id,6);" id="spinelli" src="images/spinelli/1.png"></img></div>
+		</div>
+   
+		<div class="img"><h1>Educational</h1></div>
+        <div class="pro" id="eduo">
+			<div class="img_hold"><img class="row2" onclick="InfoImgShow(this.id,7);" id="calvary" src="images/calvary/1.png"></img></div>
+			<div class="img_hold"><img class="row2" onclick="InfoImgShow(this.id,6);" id="nauset" src="images/nauset/1.png"></img></div>
+			<div class="img_hold"><img class="row2" onclick="InfoImgShow(this.id,6);" id="tyngs" src="images/tyngs/1.png"></img></div>
+		</div>
+        
+		<div class="img"><h1>Residential</h1></div>
+        <div class="pro" id="reso">
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,7);" id="faurot" src="images/faurot/1.png"></img></div>
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,5);" id="grasso" src="images/grasso/1.png"></img></div>
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,5);" id="jarvis" src="images/jarvis/1.png"></img></div>
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,7);" id="mark_f" src="images/mark_f/1.png"></img></div>
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,6);" id="sinskey" src="images/sinskey/1.png"></img></div>
+			<div class="img_hold"><img class="row3" onclick="InfoImgShow(this.id,6);" id="vastine" src="images/vastine/1.png"></img></div>
+		</div>
+        
+		<div class="img"><h1>Exploratory</h1></div>
+        <div class="pro" id="expo">
+		<button id="expR" style="position:absolute;right:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+		<button id="expL" style="position:absolute;left:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+			<div class="img_hold"><img class="row4" onclick="InfoImgShow(this.id,4);" id="artisan" src="images/artisan/1.png"></img></div>
+			<div class="img_hold"><img class="row4" onclick="InfoImgShow(this.id,5);" id="lake_merritt" src="images/lake_merritt/1.png"></img></div>
+			<div class="img_hold"><img class="row4" onclick="InfoImgShow(this.id,4);" id="sf_high_rise" src="images/sf_high_rise/1.png"></img></div>
+			<div class="img_hold"><img class="row4" onclick="InfoImgShow(this.id,3);" id="win6" src="images/win6/1.png"></img></div>
+		</div>
+    
+		<div class="img"><h1>MixedUse</h1></div>
+		<div class="pro" id="misk">
+  		<button id="mixR" style="position:absolute;right:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+		<button id="mixL" style="position:absolute;left:0%;height:20%;width:5%;z-index:3;color:black;opacity:0;padding:0;border:0;"></button>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img id="project1" class="row5" src="images/tjahome.jpg"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>	
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+			<div class="img_hold"><img class="row5" src="images/Exploratory"></img></div>
+		</div>
+    	<div class="ima" id="myDIV" style="position: fixed;z-index: 9;height: 100%;width: 100%;left: 0%;top: 0%;display: none;">
+            <img onclick="InfoImgHide();" id="close" style="margin: 0; height: 100%; width:100%;border: none;white-space: nowrap" src=""/>
+			<div class="ima" style="position: fixed;z-index: 10;height: 36vw;width: 64vw;overflow: hidden;left: 50%;top: 50%;transform: translate(-50%,-50%);display: block;background-color: rgba(0, 0, 0, 0.5);">
+				<img style="width: 100%;" id="iasd" src="safd.jpg"/>	
+			</div>
+		</div>
+	</body>
+    
+</html>
